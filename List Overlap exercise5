@@ -11,5 +11,10 @@ for num in range(0,len(a)-1):
 print(a,"\n",b)
 print(m)
 
+another solution from someone else 
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+print(set(a[x] for x in range(len(a))if a[x] in b))
+
 used list comprehension and used if in and if not in 
 it is kind of weird is looks like english language but its is okay 
