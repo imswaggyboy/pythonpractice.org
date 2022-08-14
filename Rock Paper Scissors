@@ -1,0 +1,29 @@
+i think this is my brute force solution i'll try to improve it 
+game = "Y"
+while game == "Y":
+    print("Welcome the Rock Paper Scissor Game!")
+    print("------------------------------------")
+    print(' For Rock: 1\n For Paper: 2\n For Scissor: 3\n')
+
+    player1 = int(input("Player1 Enter your option: "))
+    player2 = int(input("Player2 Enter your option: "))
+    if player1 == 1 and player2 == 2:
+        print("Player2 Won ")
+    elif player1 == 1 and player2 == 3:
+        print("Player1 Won!")    
+    elif player1 == 1 and player2 == 1:
+        print("Draw!")    
+    elif player1 == 2 and player2 == 1:
+        print("Player1 Won!")    
+    elif player1 == 2 and player2 == 2:
+        print("Draw!")    
+    elif player1 == 2 and player2 == 3:
+        print("Player2 won!")    
+    elif player1 == 3 and player2 == 1:
+        print("Player2 Won!")    
+    elif player1 == 3 and player2 == 2:
+        print("Player1 Won!")    
+    elif player1 == 3 and player2 == 3:
+        print("Draw!")    
+    game = str(input("Would you like to play again(Y/N): "))
+    game = game.capitalize()
