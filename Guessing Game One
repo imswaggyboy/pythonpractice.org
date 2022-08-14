@@ -1,0 +1,21 @@
+this do need word but i solved what the problem  ask!, next time i'll try to improve the code with no error
+
+import random
+
+print("Welcome to Guessing Number\n range(1,10)")
+print("--------------------------")
+m = "Y"
+while m !="N":
+    random_num = random.randint(1,10)
+    
+    guess = int(input("Guess the number: "))
+    if guess < random_num:
+        print("Low")
+    elif guess > random_num:
+        print("High")
+    elif guess == random_num:
+        print("You Guessed Correct, Congratulation!")
+
+    m = input("Would you like to continue the Game(press anykey/N): ")
+    m = m.capitalize()
+
