@@ -1,0 +1,32 @@
+i just made a random list using and random module and its not perfect although because the number can be repeat and it will print
+
+there are to way to do it 
+1. normal way by using for loop,if condition 
+2. another way by using list comprehension 
+
+import random 
+
+a = random.sample(range(21),13)
+b = random.sample(range(21),13)
+
+common_lis = []
+# for i in a:
+#     if i in b:
+#         if i not in common_lis:
+#             common_lis.append(i)
+
+print(a)
+print(b)
+print(common_lis)
+-------------------------------------
+another approach
+
+
+import random 
+
+a = random.sample(range(21),13)
+b = random.sample(range(21),13)
+common_lis = [i for i in a if i in b ]
+print(a)
+print(b)
+print(common_lis)
