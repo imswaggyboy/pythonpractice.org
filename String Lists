@@ -1,0 +1,7 @@
+#here we are going to check is the string is palidrome or not ,that means if we print the string in reverse order then it should be same as original string
+
+print("Check if the string is Palidrome or Not")
+string = input("Enter the words: ")
+if string ==string[::-1]:
+    print(f"{string} is Palidrome")
+else: print(f"{string} is not Palidrome!")
